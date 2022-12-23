@@ -4,7 +4,7 @@ import PaletaLista from "./PaletaLista";
 function Home() {
   return (
     <div className="Home">
-      <div className="Home_container">
+      <div className="Home__container">
         <PaletaLista />
       </div>
     </div>

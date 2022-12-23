@@ -6,8 +6,6 @@ import "./index.css";
 ReactDOM.render(
   <React.StrictMode>
     <Home />
-    <Home />
-    <Home />
   </React.StrictMode>,
   document.getElementById("root")
 );
