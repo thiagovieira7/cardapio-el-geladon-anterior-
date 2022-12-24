@@ -18,9 +18,7 @@ function PaletaLista() {
         </div>
         <img
           className="PaletaListaItem__foto"
-          src={requestAnimationFrame(
-            "../images/doce-de-leite-com-doce-de-leite.png"
-          )}
+          src={require("../assets/images/doce-de-leite-com-doce-de-leite.png")}
           alt="Paleta de doce de leite"
         />
       </div>
