@@ -18,7 +18,7 @@ function PaletaLista() {
         </div>
         <img
           className="PaletaListaItem__foto"
-          src={require("../assets/images/doce-de-leite-com-doce-de-leite.png")}
+          src={require("../assets/images/doce-de-leite-com-doce-de-leite.png")}//cuidar com camimnho da imagem, pois parrou tudo....
           alt="Paleta de doce de leite"
         />
       </div>
