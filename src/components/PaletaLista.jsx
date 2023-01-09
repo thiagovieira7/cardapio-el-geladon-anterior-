@@ -1,7 +1,15 @@
+import React, { useState } from 'react';
 import "./PaletaLista.css";
 import { paletas } from "../mocks/paletas.js";
 
 function PaletaLista() {
+  
+  const [paletaSelecionada, setPaletaSelecionada] = useState({});
+
+  const adicionarItem = (paletaIndex) => { 
+    
+  }
+
   return (
     <div className="PaletaLista">
       {paletas.map((paleta, index) => (
