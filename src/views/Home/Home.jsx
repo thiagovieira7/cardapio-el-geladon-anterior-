@@ -1,7 +1,7 @@
 import "./Home.css";
-import PaletaLista from "./PaletaLista";
-import sacola from "../assets/icons/sacola.svg";
-import logo from "../assets/logo.svg";
+import PaletaLista from "components/PaletaLista/PaletaLista";
+import sacola from "assets/icons/sacola.svg";
+import logo from "assets/logo.svg";
 
 function Home() {
   return (
@@ -23,7 +23,7 @@ function Home() {
                 src={sacola}
                 width="40px"
                 className="Sacola__icone"
-                alt="Sacola de compras" 
+                alt="Sacola de compras"
               />
             </div>
           </div>
