@@ -1,8 +1,7 @@
 import "./PaletaListaItem.css";
 
-function PaletaListaItem({paleta, quantidadeSelecionada, index}) {
-    const removerItem = (i) => console.log('remover' + 1);
-    const adicionarItem = (i) => console.log('adicionar' + i);
+function PaletaListaItem({paleta, quantidadeSelecionada, index, onRemove, onAdd}) {
+
         
 
   const badgeCounter = (canRender, index) =>
@@ -12,7 +11,7 @@ function PaletaListaItem({paleta, quantidadeSelecionada, index}) {
 
   const removeButton = (canRender, index) =>
     Boolean(canRender) && (
-      <button className="Acoes__remover" onClick={() => removerItem(index)}>
+      <button className="Acoes__remover" onClick={() => onRemove(index)}>
         remover
       </button>
     );
@@ -29,7 +28,7 @@ function PaletaListaItem({paleta, quantidadeSelecionada, index}) {
             className={`Acoes__adicionar ${
               !quantidadeSelecionada && "Acoes__adicionar--preencher"
             }`}
-            onClick={() => adicionarItem(index)}
+            onClick={() => onAdd(index)}
           >
             {" "}
             adicionar
