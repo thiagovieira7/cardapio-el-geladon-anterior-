@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import PaletaListaItem from 'components/PaletaListaItem/PaletaListaItem'
+import PaletaListaItem from "components/PaletaListaItem/PaletaListaItem";
 import "./PaletaLista.css";
 import { paletas } from "mocks/paletas.js";
 
@@ -20,13 +20,15 @@ function PaletaLista() {
     setPaletaSelecionada({ ...paletaSelecionada, ...paleta });
   };
 
-
-
   return (
     <div className="PaletaLista">
       {paletas.map((paleta, index) => (
-        <PaletaListaItem key={`PaletaListaItem-${index}`}/>
-
+        <PaletaListaItem
+          key={`PaletaListaItem-${index}`}
+          paleta={paleta}
+          quantidadeSelecionada={paletaSelecionada[index]}
+          index={index}
+        />
       ))}
     </div>
   );
