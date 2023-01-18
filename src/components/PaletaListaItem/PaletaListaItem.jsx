@@ -1,9 +1,12 @@
 import "./PaletaListaItem.css";
 
-function PaletaListaItem({paleta, quantidadeSelecionada, index, onRemove, onAdd}) {
-
-        
-
+function PaletaListaItem({
+  paleta,
+  quantidadeSelecionada,
+  index,
+  onRemove,
+  onAdd,
+}) {
   const badgeCounter = (canRender, index) =>
     Boolean(canRender) && (
       <span className="PaletaListaItem__badge"> {quantidadeSelecionada} </span>
@@ -30,7 +33,6 @@ function PaletaListaItem({paleta, quantidadeSelecionada, index, onRemove, onAdd}
             }`}
             onClick={() => onAdd(index)}
           >
-            {" "}
             adicionar
           </button>
           {removeButton(quantidadeSelecionada, index)}
@@ -39,6 +41,7 @@ function PaletaListaItem({paleta, quantidadeSelecionada, index, onRemove, onAdd}
       <img
         className="PaletaListaItem__foto"
         src={paleta.foto}
+        // eslint-disable-next-line no-template-curly-in-string
         alt={"Paleta de ${paleta.sabor}"}
       />
     </div>
